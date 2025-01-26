@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazar Kasa Uygulaması</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Yazar Kasa Uygulaması</h1>
+
+    <div>
+      <h2>Ürün Ekle</h2>
+      <input type="text" id="barcode" placeholder="Barkod">
+      <input type="number" id="price" placeholder="Fiyat">
+      <button onclick="addProduct()">Ürün Ekle</button>
+    </div>
+
+    <div>
+      <h2>Barkod Okut</h2>
+      <input type="text" id="scanBarcode" placeholder="Barkod">
+      <button onclick="scanBarcode()">Barkod Tara</button>
+    </div>
+
+    <div>
+      <h2>Sepet</h2>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Ürün</th>
+            <th>Fiyat</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Veresiye Ekle</h2>
+      <input type="text" id="customer" placeholder="Müşteri Adı">
+      <button onclick="completeSale()">Veresiye Kaydet</button>
+    </div>
+
+    <div>
+      <h2>Veresiye Listesi</h2>
+      <table id="veresiyeTable">
+        <thead>
+          <tr>
+            <th>Müşteri</th>
+            <th>Toplam Borç</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
